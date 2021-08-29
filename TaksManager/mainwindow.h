@@ -6,22 +6,22 @@
 #include <QStringListModel>
 
 
-class CToDoList : public QMainWindow
+class Task : public QMainWindow
 {
     Q_OBJECT
 public:
-    CToDoList();
+    Task();
 
 protected slots:
     void onAdd();
     void onRemove ();
 
 private:
-    QListView* m_pwPending = nullptr;
-    QListView* m_pwCopleted = nullptr;
+    QListView* wPending = nullptr;
+    QListView* wCopleted = nullptr;
 
-    QAction* m_pActAdd = nullptr;
-    QAction* m_pActRemove = nullptr;
+    QAction* pActAdd = nullptr;
+    QAction* pActRemove = nullptr;
 };
 
 
